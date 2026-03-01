@@ -13,7 +13,7 @@
                 <div class="form-title">Do you want to change your name?</div>
                 <div class="button-container">
                     <button class="responseButton" name="NameChange" data-value="true" onclick="dialogueManager.loadDialogue(dialogueSequences.page3.onNameChangeYes)">Yes</button>
-                    <button class="responseButton" name="NameChange" data-value="false" onclick="dialogueManager.loadDialogue(dialogueSequences.page3.onNameChangeNo)">No</button>
+                    <button class="responseButton" name="NameChange" data-value="false" onclick="dialogueManager.loadDialogue(dialogueSequences.page3.onNameChangeNo); setTimeout(function(){ window.location.href='index.html'; }, 5000);">No</button>
                 </div>
             </div>
             <div class="form-wrapper" name="newNameInput" style="display: none;">
