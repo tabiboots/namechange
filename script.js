@@ -1,8 +1,10 @@
 import DialogueManager from './modules/dialogueManager.js';
 import dialogueSequences from './modules/dialogueData.js';
+import inactivityReset from './modules/inactivityReset.js';
 
 // Initialize dialogue manager when document is ready
 document.addEventListener('DOMContentLoaded', () => {
+    inactivityReset.init();
     const dialogueManager = new DialogueManager();
     
     // Get current page name from URL
