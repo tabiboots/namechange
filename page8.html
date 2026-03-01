@@ -64,6 +64,9 @@
                 a.click();
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
+
+                await new Promise(resolve => setTimeout(resolve, 5000));
+                window.location.href = 'index.html';
             } catch (error) {
                 console.error('Failed to fill PDF:', error);
             }
